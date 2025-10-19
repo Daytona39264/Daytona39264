@@ -2,7 +2,22 @@
 
 > Building the future, one commit at a time.
 
-I'm Daytona39264 — a passionate developer who loves turning ideas into reliable, polished software. This README is ready-to-use for your GitHub profile and includes Profession/Role, Top Skills, Favorite Projects, Short Bio/Motto, Social Links, and Fun Facts.
+[![GitHub followers](https://img.shields.io/github/followers/Daytona39264?label=Follow&style=social)](https://github.com/Daytona39264) [![Website](https://img.shields.io/website?url=https%3A%2F%2Fdaytona.dev)](https://daytona.dev) [![LinkedIn](https://img.shields.io/badge/LinkedIn-Daytona39264-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/daytona39264) [![Twitter](https://img.shields.io/twitter/url?label=@Daytona39264&url=https%3A%2F%2Ftwitter.com%2FDaytona39264)](https://twitter.com/Daytona39264)
+
+<!-- GitHub Readme Stats -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=Daytona39264&show_icons=true&theme=dark&hide_border=true">
+  <img alt="Daytona39264 GitHub stats" src="https://github-readme-stats.vercel.app/api?username=Daytona39264&show_icons=true&theme=default&hide_border=true">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Daytona39264&layout=compact&theme=dark&hide_border=true">
+  <img alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Daytona39264&layout=compact&theme=default&hide_border=true">
+</picture>
+
+---
+
+I'm Daytona39264 — a passionate developer who loves turning ideas into reliable, polished software. This README includes Profession/Role, Top Skills, Favorite Projects, Short Bio/Motto, Social Links, and Fun Facts.
 
 ---
 
@@ -39,7 +54,7 @@ Open to: Collaboration, freelance work, mentoring, and new opportunities.
   Built with: Python, scikit-learn, PyTorch  
   Highlights: Reproducible experiments, model evaluation pipelines, utilities for data versioning
 
-(Replace these repo names and links with your real projects if you'd like the profile to link to live repos.)
+(If you want different project URLs or descriptions, tell me and I will update them.)
 
 ---
 
@@ -70,3 +85,12 @@ Motto:
 - 🎮 Gamer — strategy and puzzle games keep my problem-solving sharp.
 
 ---
+
+## How to use this README
+1. If you haven't already, create a repository named exactly: Daytona39264 (your GitHub username).  
+2. Add this file as README.md in the repository root.  
+3. Commit and push — GitHub will render this on your profile page automatically.
+
+---
+
+If you'd like updates (different tone, more or fewer badges, real project URLs, or a PR instead of a direct push), tell me which changes and I will update the file.
