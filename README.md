@@ -1,4 +1,4 @@
-Did youDid you guysDid you guys guys doDid you you guys doWhat did you guys doWhat did you guys do tonightWhat did you guys eat tonightWhat did you guys eat played my mom said I no I didn't no I didn't I still remember it# Hi, I'm Daytona39264 👋
+# Hi, I'm Daytona39264 👋
 
 > Building the future, one commit at a time.
 
