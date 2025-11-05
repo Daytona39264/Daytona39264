@@ -11,11 +11,28 @@
 #
 name: "CodeQL Advanced"
 
+# Optimize resource usage by canceling outdated workflow runs
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 on:
   push:
     branches: [ "main" ]
+    paths-ignore:
+      - '**.md'
+      - 'docs/**'
+      - '.github/ISSUE_TEMPLATE/**'
+      - '.github/CONTRIBUTING.md'
+      - '.github/ISSUES.md'
   pull_request:
     branches: [ "main" ]
+    paths-ignore:
+      - '**.md'
+      - 'docs/**'
+      - '.github/ISSUE_TEMPLATE/**'
+      - '.github/CONTRIBUTING.md'
+      - '.github/ISSUES.md'
   schedule:
     - cron: '19 6 * * 6'
 
@@ -28,6 +45,7 @@ jobs:
     #   - https://gh.io/using-larger-runners (GitHub.com only)
     # Consider using larger runners or machines with greater resources for possible analysis time improvements.
     runs-on: ${{ (matrix.language == 'swift' && 'macos-latest') || 'ubuntu-latest' }}
+    timeout-minutes: 30  # Prevent runaway jobs from consuming excessive resources
     permissions:
       # required for all workflows
       security-events: write
