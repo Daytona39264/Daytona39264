@@ -97,7 +97,7 @@ I've forked this profile repository and want to customize it with my real projec
 
 ## Using Labels
 
-Apply appropriate labels to help categorize your issue:
+If you have permissions, apply appropriate labels to help categorize your issue. Otherwise, suggest labels in your issue description to help maintainers categorize it:
 
 - **bug** - Something isn't working correctly
 - **documentation** - Improvements or additions to documentation
