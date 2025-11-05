@@ -27,8 +27,8 @@ This is a personal GitHub profile repository that showcases professional informa
 
 1. **Read the documentation**
    - Review the [README.md](../README.md)
-   - Read the [Issue Guidelines](.github/ISSUES.md)
-   - Check the [Copilot Instructions](.github/copilot-instructions.md) for detailed standards
+   - Read the [Issue Guidelines](ISSUES.md)
+   - Check the [Copilot Instructions](copilot-instructions.md) for detailed standards
 
 2. **Search existing issues and PRs**
    - Avoid duplicate work by checking if someone is already working on your idea
@@ -93,7 +93,7 @@ Before submitting a pull request:
 
 ## Code Style and Conventions
 
-This repository follows specific markdown standards and content guidelines. For complete details, see [copilot-instructions.md](.github/copilot-instructions.md).
+This repository follows specific markdown standards and content guidelines. For complete details, see [copilot-instructions.md](copilot-instructions.md).
 
 ### Markdown Standards
 
@@ -300,7 +300,7 @@ Contributors who make significant improvements will be:
 
 If you have questions about contributing that aren't covered here:
 - Create an issue using the Question template
-- Review the [copilot-instructions.md](.github/copilot-instructions.md)
+- Review the [copilot-instructions.md](copilot-instructions.md)
 - Check existing issues and discussions
 
 Thank you for contributing to make this project better! Your time and effort are greatly appreciated.
