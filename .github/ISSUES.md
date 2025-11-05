@@ -28,7 +28,7 @@ Thank you for your interest in contributing to this repository! To help maintain
 
 ### Description
 
-A good issue description should include:
+A good issue description should include the following elements based on the type of issue:
 
 #### For Bug Reports:
 1. **What happened** - Clear description of the bug
