@@ -111,10 +111,10 @@ Apply appropriate labels to help categorize your issue:
 
 ## What NOT to Include
 
-❌ **Don't paste entire UI selections** - Avoid copying the entire GitHub interface into the issue body  
-❌ **Don't create empty issues** - Always provide a description  
-❌ **Don't use all caps** - Write in normal sentence case  
-❌ **Don't be vague** - Provide specific, actionable information  
+❌ **Don't paste entire UI selections** - Avoid copying the entire GitHub interface into the issue body
+❌ **Don't create empty issues** - Always provide a description
+❌ **Don't use all caps** - Write in normal sentence case
+❌ **Don't be vague** - Provide specific, actionable information
 ❌ **Don't submit test issues** - Use a personal repository for testing
 
 ## Issue Templates
@@ -183,11 +183,11 @@ What have you already tried or looked at?
 
 Based on actual issues in this repository, here are examples of what NOT to do:
 
-❌ **Issue #8**: Title "issue" with no description  
+❌ **Issue #8**: Title "issue" with no description
 - Problem: Completely unclear what the issue is about
 - Fix: Use a descriptive title and provide details
 
-❌ **Issue #9**: Title "Daytona39264" with selected UI text in body  
+❌ **Issue #9**: Title "Daytona39264" with selected UI text in body
 - Problem: Appears to be accidentally created with clipboard content
 - Fix: Write a clear problem statement, not UI text
 
