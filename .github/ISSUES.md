@@ -111,7 +111,7 @@ If you have permissions, apply appropriate labels to help categorize your issue.
 
 ## What NOT to Include
 
-❌ **Don't paste entire UI selections** - Avoid copying the entire GitHub interface into the issue body
+❌ **Don't paste clipboard content or UI text** - Avoid accidentally pasting copied interface text or selections into the issue body
 ❌ **Don't create empty issues** - Always provide a description
 ❌ **Don't use all caps** - Write in normal sentence case
 ❌ **Don't be vague** - Provide specific, actionable information
