@@ -86,6 +86,24 @@ Motto:
 
 ---
 
+## 7) Resources & Documentation
+
+This repository includes the [Dingo API Wiki](https://github.com/api-ecosystem-for-laravel/dingo-api/wiki) as a git submodule in the `dingo-api-wiki/` directory. The Dingo API is a Laravel package for building RESTful APIs.
+
+To access the wiki content after cloning this repository:
+```bash
+git submodule update --init --recursive
+```
+
+The wiki contains comprehensive documentation on:
+- Installation and Configuration
+- Creating API Endpoints
+- Authentication and Rate Limiting
+- OAuth 2.0 Integration
+- And more...
+
+---
+
 ## How to use this README
 1. If you haven't already, create a repository named exactly: Daytona39264 (your GitHub username).  
 2. Add this file as README.md in the repository root.  
