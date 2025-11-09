@@ -56,7 +56,8 @@ iOS downgrading is the process of reverting your iPhone to a previous version of
 ## Need Help?
 
 - [Troubleshooting Guide](troubleshooting.md)
-- [Common Issues and Solutions](troubleshooting.md#common-issues)
+- [Connection Issues](troubleshooting.md#connection-issues)
+- [Error Codes](troubleshooting.md#error-codes)
 - [FAQ](troubleshooting.md#frequently-asked-questions)
 
 ## Additional Resources
