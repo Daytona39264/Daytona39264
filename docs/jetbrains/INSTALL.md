@@ -327,6 +327,8 @@ killall jetbrains-toolbox
 
 # Remove settings file (last resort)
 rm -f ~/.local/share/JetBrains/Toolbox/.settings.json
+# Remove settings cache (last resort)
+rm -rf ~/.local/share/JetBrains/Toolbox/settings
 ```
 
 **Tools not appearing in Toolbox:**
