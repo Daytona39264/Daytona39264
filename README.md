@@ -88,7 +88,36 @@ Motto:
 
 ## 7) Resources & Documentation
 
-This repository includes the [Dingo API Wiki](https://github.com/api-ecosystem-for-laravel/dingo-api/wiki) as a git submodule in the `dingo-api-wiki/` directory. The Dingo API is a Laravel package for building RESTful APIs.
+### 📚 Documentation Guides
+
+This repository includes comprehensive guides for developers:
+
+#### [SSH Connection Guide](docs/ssh/)
+Complete guide for connecting to GitHub with SSH:
+- Generating and managing SSH keys
+- Adding keys to GitHub
+- Testing SSH connections
+- Security best practices
+- Deploy keys for servers and CI/CD
+
+#### [Claude Code Integration](docs/claude-code/)
+AI-powered code assistance directly in your GitHub workflow:
+- **[Quick Setup](docs/claude-code/SETUP.md)** - Get started in 5 minutes
+- **[Quick Reference](docs/claude-code/QUICK-REFERENCE.md)** - Common commands and examples
+- **[Full Integration Guide](docs/claude-code/github-integration.md)** - Detailed documentation
+
+**Try it now:** Comment `@claude-code [your instruction]` on any PR!
+
+Examples:
+```
+@claude-code Fix the failing TypeScript errors
+@claude-code Refactor this function to improve readability
+@claude-code Add input validation with error messages
+```
+
+### Dingo API Wiki
+
+This repository also includes the [Dingo API Wiki](https://github.com/api-ecosystem-for-laravel/dingo-api/wiki) as a git submodule in the `dingo-api-wiki/` directory. The Dingo API is a Laravel package for building RESTful APIs.
 
 To access the wiki content after cloning this repository:
 ```bash
