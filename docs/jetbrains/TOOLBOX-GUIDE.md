@@ -43,6 +43,7 @@ Toolbox can install and manage:
 - RubyMine
 - CLion
 - Rider
+- AppCode
 - DataGrip
 - RustRover
 

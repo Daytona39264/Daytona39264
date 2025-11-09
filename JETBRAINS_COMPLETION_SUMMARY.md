@@ -151,7 +151,7 @@ Successfully created comprehensive installation resources for JetBrains developm
 - Help resources
 - Related documentation (SSH, Claude Code)
 
-#### 5. `docs/jetbrains/CHANGELOG.md` (141 lines)
+#### 5. `docs/jetbrains/CHANGELOG.md` (200 lines)
 **Complete project changelog**
 
 **Contents**:

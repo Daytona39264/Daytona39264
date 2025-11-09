@@ -38,7 +38,7 @@
    - Navigation hub
    - Quick links
 
-✅ `docs/jetbrains/CHANGELOG.md` (141 lines)
+✅ `docs/jetbrains/CHANGELOG.md` (200 lines)
    - Version history
    - Future enhancements
 
