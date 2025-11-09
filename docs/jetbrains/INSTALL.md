@@ -143,29 +143,202 @@ Reload your shell configuration:
 source ~/.bashrc  # or ~/.zshrc, or restart your terminal
 ```
 
-### JetBrains Toolbox
+### JetBrains Toolbox (Recommended for Multiple IDEs)
 
-JetBrains Toolbox is the official tool manager that can also install JetBrains Client:
+**JetBrains Toolbox** is the official application manager from JetBrains that provides a unified way to install, update, and manage all JetBrains IDEs and tools, including JetBrains Gateway (Client).
+
+#### Why Use Toolbox?
+
+- **Centralized Management**: Install and update all JetBrains products from one place
+- **Automatic Updates**: Keep your IDEs and tools up-to-date automatically
+- **Version Management**: Install and switch between multiple versions of the same IDE
+- **Project Management**: Quick access to recent projects across all IDEs
+- **Easy Rollback**: Revert to previous versions if needed
+- **System Tray Integration**: Quick launcher for all installed tools
+- **Settings Sync**: Synchronize IDE settings across machines
+
+#### Toolbox vs. Standalone Installation
+
+| Feature | Toolbox | Standalone |
+|---------|---------|------------|
+| Installation Complexity | Easy (GUI) | Moderate (CLI/Manual) |
+| Updates | Automatic | Manual |
+| Multiple IDE Management | Yes | No |
+| Version Switching | Yes | Manual |
+| Disk Space (Overhead) | ~100 MB | None |
+| Best For | Multiple IDEs | Single tool/CLI environments |
 
 #### Step 1: Download Toolbox
 
+**Linux:**
 ```bash
-# Download latest version
+# Method 1: Direct download
 wget https://download.jetbrains.com/toolbox/jetbrains-toolbox-latest.tar.gz
 
-# Extract
-tar -xzf jetbrains-toolbox-latest.tar.gz
+# Method 2: Get specific version
+wget https://download.jetbrains.com/toolbox/jetbrains-toolbox-2.1.3.18901.tar.gz
+
+# Extract the archive
+tar -xzf jetbrains-toolbox-*.tar.gz
+
+# Make it executable
+chmod +x jetbrains-toolbox-*/jetbrains-toolbox
 
 # Run the installer
 ./jetbrains-toolbox-*/jetbrains-toolbox
 ```
 
-#### Step 2: Install Client
+**macOS:**
+```bash
+# Download the DMG
+curl -L -o JetBrainsToolbox.dmg \
+  https://download.jetbrains.com/toolbox/jetbrains-toolbox-latest.dmg
 
-1. Open JetBrains Toolbox
-2. Search for "Gateway" or "JetBrains Client"
-3. Click Install
-4. Toolbox will manage updates automatically
+# Mount and install
+open JetBrainsToolbox.dmg
+# Drag to Applications folder
+```
+
+**Windows:**
+Download the `.exe` installer from:
+https://www.jetbrains.com/toolbox-app/
+
+#### Step 2: Initial Setup
+
+1. **Launch Toolbox**
+   - Linux: The app will start and add an icon to your system tray
+   - macOS: Open from Applications
+   - Windows: Run the installed executable
+
+2. **Login (Optional but Recommended)**
+   - Sign in with your JetBrains account
+   - Enables license management and settings sync
+   - Not required for Community editions or trial usage
+
+3. **Configure Settings**
+   - Click the gear icon in Toolbox
+   - Set installation directory (default: `~/.local/share/JetBrains/Toolbox/apps`)
+   - Configure update preferences
+   - Enable/disable automatic updates
+   - Set shell scripts directory (for command-line access)
+
+#### Step 3: Install JetBrains Gateway (Client)
+
+1. **Open JetBrains Toolbox** from your system tray or applications
+
+2. **Find Gateway**
+   - Scroll through the available tools
+   - Or use the search bar: type "Gateway"
+
+3. **Install**
+   - Click the "Install" button next to "JetBrains Gateway"
+   - Toolbox will download and install the latest version
+   - A desktop entry/launcher will be created automatically
+
+4. **Launch Gateway**
+   - Click the Gateway icon in Toolbox
+   - Or use the desktop launcher
+   - Or run from command line (if shell scripts enabled): `gateway`
+
+#### Step 4: Install IDE Backends (Optional)
+
+If you want full JetBrains IDEs locally (not just for remote development):
+
+1. **Browse Available IDEs** in Toolbox
+   - IntelliJ IDEA Ultimate / Community
+   - PyCharm Professional / Community
+   - WebStorm
+   - PhpStorm
+   - GoLand
+   - CLion
+   - RubyMine
+   - Rider
+   - DataGrip
+   - And more...
+
+2. **Install Desired IDEs**
+   - Click "Install" next to any IDE
+   - Choose version (latest stable, EAP, or specific version)
+   - Toolbox handles everything automatically
+
+3. **Manage Versions**
+   - Click the ⚙️ icon next to an installed IDE
+   - "Install another version" to have multiple versions
+   - Useful for testing or compatibility
+
+#### Toolbox Features
+
+**Project Management:**
+- See all recent projects across all IDEs
+- Open projects quickly from the system tray
+- Pin frequently used projects
+
+**Update Management:**
+- Automatic update checking
+- Choose update channels (Stable, EAP, Beta)
+- Update all tools with one click
+- Schedule updates for specific times
+
+**Shell Scripts:**
+- Enable in Settings → Generate shell scripts
+- Access IDEs from command line
+- Example: `idea .` to open current directory in IntelliJ IDEA
+- Scripts location: `~/.local/bin` (Linux), `/usr/local/bin` (macOS)
+
+**Licensing:**
+- View all active licenses
+- Manage subscriptions
+- Easy license activation across IDEs
+
+#### Toolbox Command Line
+
+While Toolbox is primarily a GUI application, you can control it programmatically:
+
+```bash
+# Linux: Toolbox location
+~/.local/share/JetBrains/Toolbox/bin/jetbrains-toolbox
+
+# macOS: Toolbox location
+~/Library/Application\ Support/JetBrains/Toolbox/bin/jetbrains-toolbox
+
+# Example: Open Toolbox
+jetbrains-toolbox &
+```
+
+#### Uninstalling via Toolbox
+
+To remove JetBrains Gateway or other tools:
+
+1. Open Toolbox
+2. Find the tool you want to remove
+3. Click the ⚙️ (settings) icon
+4. Select "Uninstall"
+5. Confirm removal
+
+#### Troubleshooting Toolbox
+
+**Toolbox won't start:**
+```bash
+# Check if it's already running
+ps aux | grep toolbox
+
+# Kill existing process if stuck
+killall jetbrains-toolbox
+
+# Remove settings cache (last resort)
+rm -rf ~/.local/share/JetBrains/Toolbox/settings
+```
+
+**Tools not appearing in Toolbox:**
+- Check your internet connection
+- Refresh the tool list (Settings → Update list)
+- Check available disk space
+- Verify Toolbox isn't in offline mode
+
+**Can't find installed tools:**
+- Check installation directory in Settings
+- Verify shell scripts are enabled
+- Re-scan for installed applications
 
 ## Post-Installation
 
