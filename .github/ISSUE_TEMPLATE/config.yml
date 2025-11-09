@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: GitHub Discussions
+    url: https://github.com/Daytona39264/Daytona39264/discussions
+    about: For general discussions and questions not suitable for issues
+  - name: Issue Guidelines
+    url: https://github.com/Daytona39264/Daytona39264/blob/main/.github/ISSUES.md
+    about: Please read the issue guidelines before creating an issue
