@@ -6,13 +6,20 @@ labels: question
 assignees: ''
 ---
 
+<!-- 
+🚨 IMPORTANT: Please fill out the required sections below. Empty or placeholder questions will be closed.
+📖 Before submitting, review our Issue Guidelines: https://github.com/Daytona39264/Daytona39264/blob/main/.github/ISSUES.md
+-->
+
 ## ❓ Question
 
-<!-- Ask your question clearly and concisely -->
+<!-- REQUIRED: Ask your question clearly and concisely.
+     Delete this comment and write your question. -->
 
 ## 🎯 What Are You Trying to Accomplish?
 
-<!-- Describe what you're trying to do or understand -->
+<!-- REQUIRED: Describe what you're trying to do or understand.
+     Delete this comment and explain your goal. -->
 
 ## 🔍 What Have You Tried?
 
