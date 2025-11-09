@@ -115,6 +115,15 @@ Examples:
 @claude-code Add input validation with error messages
 ```
 
+#### [iOS Downgrade Guide](docs/ios/)
+Complete guide for downgrading iPhone to previous iOS versions:
+- Understanding iOS downgrading and when it's needed
+- Prerequisites and requirements
+- Downloading iOS firmware (IPSW) files
+- Step-by-step downgrade process
+- Troubleshooting common issues
+- Important warnings and limitations
+
 ### Dingo API Wiki
 
 This repository also includes the [Dingo API Wiki](https://github.com/api-ecosystem-for-laravel/dingo-api/wiki) as a git submodule in the `dingo-api-wiki/` directory. The Dingo API is a Laravel package for building RESTful APIs.
