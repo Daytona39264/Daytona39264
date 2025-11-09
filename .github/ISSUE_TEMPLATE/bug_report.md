@@ -6,13 +6,20 @@ labels: bug
 assignees: ''
 ---
 
+<!-- 
+🚨 IMPORTANT: Please fill out ALL required sections below. Empty or placeholder issues will be closed.
+📖 Before submitting, review our Issue Guidelines: https://github.com/Daytona39264/Daytona39264/blob/main/.github/ISSUES.md
+-->
+
 ## 🐛 Bug Description
 
-<!-- A clear and concise description of what the bug is -->
+<!-- REQUIRED: A clear and concise description of what the bug is.
+     Delete this comment and describe the bug. -->
 
 ## 📋 Steps to Reproduce
 
-<!-- Steps to reproduce the behavior -->
+<!-- REQUIRED: Steps to reproduce the behavior.
+     Delete this comment and provide clear steps. -->
 
 1. Go to '...'
 2. Click on '...'
@@ -21,11 +28,13 @@ assignees: ''
 
 ## ✅ Expected Behavior
 
-<!-- A clear and concise description of what you expected to happen -->
+<!-- REQUIRED: A clear and concise description of what you expected to happen.
+     Delete this comment and describe expected behavior. -->
 
 ## ❌ Actual Behavior
 
-<!-- A clear and concise description of what actually happened -->
+<!-- REQUIRED: A clear and concise description of what actually happened.
+     Delete this comment and describe actual behavior. -->
 
 ## 📸 Screenshots
 
