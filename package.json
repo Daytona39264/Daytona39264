@@ -1,0 +1,30 @@
+{
+  "name": "daytona39264-profile",
+  "version": "1.0.0",
+  "description": "GitHub profile repository with Claude Code integration",
+  "private": true,
+  "scripts": {
+    "test": "echo \"No tests configured\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daytona39264/Daytona39264.git"
+  },
+  "keywords": [
+    "github-profile",
+    "claude-code",
+    "automation"
+  ],
+  "author": "Daytona39264",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Daytona39264/Daytona39264/issues"
+  },
+  "homepage": "https://github.com/Daytona39264/Daytona39264#readme",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
