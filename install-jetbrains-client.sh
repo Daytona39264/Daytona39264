@@ -64,6 +64,7 @@ check_dependencies() {
 check_disk_space() {
     log_info "Checking available disk space..."
 
+    # shellcheck disable=SC2155
     local available_kb=$(df -k "$HOME" | awk 'NR==2 {print $4}')
     local required_kb=$((500 * 1024)) # 500 MB
 
