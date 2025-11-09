@@ -115,6 +115,28 @@ Examples:
 @claude-code Add input validation with error messages
 ```
 
+#### [JetBrains Client Setup](docs/jetbrains/)
+Remote development with JetBrains IDEs made easy:
+- **[Quick Start](docs/jetbrains/QUICK-START.md)** - Install and connect in 5 minutes
+- **[Full Installation Guide](docs/jetbrains/INSTALL.md)** - Comprehensive setup documentation
+- **[Installation Script](install-jetbrains-client.sh)** - Automated installation for Linux
+
+**Quick install:**
+```bash
+# Clone this repo
+git clone https://github.com/Daytona39264/Daytona39264.git
+cd Daytona39264
+
+# Run the installer
+./install-jetbrains-client.sh
+```
+
+Supported IDEs:
+- IntelliJ IDEA Ultimate
+- PyCharm Professional
+- WebStorm, PhpStorm, GoLand
+- CLion, RubyMine, Rider, and more
+
 ### Dingo API Wiki
 
 This repository also includes the [Dingo API Wiki](https://github.com/api-ecosystem-for-laravel/dingo-api/wiki) as a git submodule in the `dingo-api-wiki/` directory. The Dingo API is a Laravel package for building RESTful APIs.
