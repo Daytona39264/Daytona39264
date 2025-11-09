@@ -325,8 +325,8 @@ ps aux | grep toolbox
 # Kill existing process if stuck
 killall jetbrains-toolbox
 
-# Remove settings cache (last resort)
-rm -rf ~/.local/share/JetBrains/Toolbox/settings
+# Remove settings file (last resort)
+rm -f ~/.local/share/JetBrains/Toolbox/.settings.json
 ```
 
 **Tools not appearing in Toolbox:**
