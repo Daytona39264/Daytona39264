@@ -33,7 +33,7 @@ Successfully completed comprehensive work on two major projects:
 - ✅ `docs/jetbrains/QUICK-START.md` (178 lines) - 5-minute setup guide
 - ✅ `docs/jetbrains/TOOLBOX-GUIDE.md` (684 lines) - Comprehensive Toolbox reference
 - ✅ `docs/jetbrains/README.md` (79 lines) - Navigation hub
-- ✅ `docs/jetbrains/CHANGELOG.md` (141 lines) - Version history
+- ✅ `docs/jetbrains/CHANGELOG.md` (200 lines) - Version history
 
 #### Project Files (4)
 - ✅ `.github/PULL_REQUEST_TEMPLATE.md` - PR template
