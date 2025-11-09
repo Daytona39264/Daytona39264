@@ -119,21 +119,25 @@ Examples:
 Remote development with JetBrains IDEs made easy:
 - **[Quick Start](docs/jetbrains/QUICK-START.md)** - Install and connect in 5 minutes
 - **[Full Installation Guide](docs/jetbrains/INSTALL.md)** - Comprehensive setup documentation
-- **[Installation Script](install-jetbrains-client.sh)** - Automated installation for Linux
+- **[Client Installation Script](install-jetbrains-client.sh)** - Automated standalone client install
+- **[Toolbox Installation Script](install-jetbrains-toolbox.sh)** - Install JetBrains Toolbox App
 
-**Quick install:**
+**Quick install options:**
 ```bash
 # Clone this repo
 git clone https://github.com/Daytona39264/Daytona39264.git
 cd Daytona39264
 
-# Run the installer
+# Option 1: Install Toolbox (recommended for multiple IDEs)
+./install-jetbrains-toolbox.sh
+
+# Option 2: Install standalone client (lightweight, CLI-focused)
 ./install-jetbrains-client.sh
 ```
 
 Supported IDEs:
-- IntelliJ IDEA Ultimate
-- PyCharm Professional
+- IntelliJ IDEA Ultimate / Community
+- PyCharm Professional / Community
 - WebStorm, PhpStorm, GoLand
 - CLion, RubyMine, Rider, and more
 

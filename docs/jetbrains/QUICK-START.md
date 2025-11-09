@@ -10,21 +10,43 @@ Get up and running with JetBrains Client in 5 minutes.
 
 ## Installation
 
-### One-Line Install (Linux)
+Choose one of the following methods:
 
+### Method 1: JetBrains Toolbox (Recommended for GUI Users)
+
+**Best if you want:** Multiple JetBrains IDEs, automatic updates, and centralized management.
+
+```bash
+# Clone repo
+git clone https://github.com/Daytona39264/Daytona39264.git
+cd Daytona39264
+
+# Install Toolbox
+./install-jetbrains-toolbox.sh
+
+# Then install Gateway through Toolbox GUI:
+# 1. Open Toolbox from system tray
+# 2. Search for "Gateway"
+# 3. Click Install
+```
+
+### Method 2: Standalone Client (Recommended for CLI Users)
+
+**Best if you want:** Lightweight installation, CLI-only environments, single tool.
+
+**One-Line Install (Linux):**
 ```bash
 curl -fsSL https://raw.githubusercontent.com/Daytona39264/Daytona39264/main/install-jetbrains-client.sh | bash
 ```
 
-Or clone and run:
-
+**Or clone and run:**
 ```bash
 git clone https://github.com/Daytona39264/Daytona39264.git
 cd Daytona39264
 ./install-jetbrains-client.sh
 ```
 
-### Quick Manual Install
+### Method 3: Quick Manual Install
 
 ```bash
 # Download
