@@ -35,11 +35,15 @@ cd Daytona39264
 **Best if you want:** Lightweight installation, CLI-only environments, single tool.
 
 **One-Line Install (Linux):**
+### One-Line Install (Linux)
+
 ```bash
 curl -fsSL https://raw.githubusercontent.com/Daytona39264/Daytona39264/main/install-jetbrains-client.sh | bash
 ```
 
 **Or clone and run:**
+Or clone and run:
+
 ```bash
 git clone https://github.com/Daytona39264/Daytona39264.git
 cd Daytona39264

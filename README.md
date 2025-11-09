@@ -138,6 +138,8 @@ cd Daytona39264
 Supported IDEs:
 - IntelliJ IDEA Ultimate / Community
 - PyCharm Professional / Community
+- IntelliJ IDEA Ultimate
+- PyCharm Professional
 - WebStorm, PhpStorm, GoLand
 - CLion, RubyMine, Rider, and more
 
