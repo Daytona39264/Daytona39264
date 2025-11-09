@@ -1,0 +1,30 @@
+{
+  "name": "claude-code-github-integration",
+  "version": "1.0.0",
+  "description": "GitHub integration for Claude Code AI assistant",
+  "main": ".github/scripts/claude-code-handler.js",
+  "scripts": {
+    "handler": "node .github/scripts/claude-code-handler.js",
+    "test": "echo \"Tests will be added in future versions\" && exit 0"
+  },
+  "keywords": [
+    "claude",
+    "ai",
+    "github",
+    "automation",
+    "code-review",
+    "ci-cd"
+  ],
+  "author": "Daytona39264",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.20.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Daytona39264/Daytona39264.git"
+  }
+}
