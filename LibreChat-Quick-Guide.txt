@@ -1,0 +1,82 @@
+╔══════════════════════════════════════════════════════════════════╗
+║                                                                  ║
+║           📱 LIBRECHAT - QUICK SETUP GUIDE                       ║
+║           For iPhone Access                                      ║
+║                                                                  ║
+╚══════════════════════════════════════════════════════════════════╝
+
+LOCATION: /home/user/Daytona39264/LibreChat/
+ACCESS URL: http://21.0.0.60:3080
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 EASIEST METHOD - Run This Command:
+
+    cd /home/user/Daytona39264/LibreChat
+    ./setup-and-start.sh
+
+   It will guide you through everything!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📋 MANUAL SETUP (3 STEPS):
+
+1. MongoDB Atlas (5 min - FREE):
+   → https://www.mongodb.com/cloud/atlas/register
+   → Create account + M0 FREE cluster
+   → Get connection string
+
+2. Edit .env file (line 18):
+   → Location: /home/user/Daytona39264/LibreChat/.env
+   → Add: MONGO_URI=mongodb+srv://user:pass@cluster.mongodb.net/LibreChat?...
+
+3. Start LibreChat:
+   → cd /home/user/Daytona39264/LibreChat
+   → NODE_ENV=production node api/server/index.js
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📱 ON YOUR IPHONE:
+
+1. Open Safari
+2. Go to: http://21.0.0.60:3080
+3. Create account (first user = admin)
+4. Start chatting!
+
+💡 Add to Home Screen: Share → Add to Home Screen
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔑 API KEYS (Optional - Add at least ONE):
+
+→ OpenAI: https://platform.openai.com/api-keys
+  Edit .env line 198: OPENAI_API_KEY=sk-proj-xxxxx
+
+→ Anthropic: https://console.anthropic.com/
+  Edit .env line 111: ANTHROPIC_API_KEY=sk-ant-xxxxx
+
+→ Google: https://aistudio.google.com/app/apikey
+  Edit .env line 159: GOOGLE_KEY=xxxxx
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📚 FULL DOCUMENTATION:
+
+→ LibreChat-Setup-Instructions.md (complete guide)
+→ /home/user/Daytona39264/LibreChat/START_HERE.md
+→ /home/user/Daytona39264/LibreChat/SETUP_GUIDE.md
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ WHAT'S DONE:
+
+✅ LibreChat installed (3,231 packages)
+✅ Frontend built for iPhone
+✅ Backend production-ready
+✅ Network configured
+✅ Security keys set
+✅ Everything optimized
+
+⏱️  Time to complete: 7 minutes total!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
