@@ -82,7 +82,6 @@ jobs:
       - name: Install Claude Code SDK
         run: |
           npm install -g @anthropic-ai/sdk
-          npm install -g @anthropic-ai/claude-code
 
       - name: Run Claude Code
         env:
