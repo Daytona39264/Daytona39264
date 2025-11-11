@@ -141,6 +141,26 @@ Supported IDEs:
 - WebStorm, PhpStorm, GoLand
 - CLion, RubyMine, Rider, and more
 
+### AI Security Research
+
+#### [System Prompts Leaks Analysis](system_prompts_leaks/)
+Comprehensive security analysis of AI system prompt vulnerabilities:
+- **[Complete Security Analysis Report](system_prompts_leaks/AI-SECURITY-ANALYSIS-REPORT.md)** - In-depth analysis of prompt leakage vulnerabilities
+- Analysis of ChatGPT, Claude, and Gemini system prompts
+- Real-world attack case studies and breach demonstrations
+- Protection strategies and security best practices
+- Regulatory compliance and emerging standards
+- Comparative analysis of AI security approaches
+
+**Key Topics:**
+- System prompt leakage techniques and attack vectors
+- Prompt injection vulnerabilities (unsolved frontier problem)
+- Multi-modal attacks and data exfiltration
+- Defense-in-depth strategies for AI systems
+- AI red-teaming and continuous monitoring
+
+**Target Audience:** Security researchers, AI/ML engineers, CISOs, compliance officers, and anyone deploying production AI systems.
+
 ### Dingo API Wiki
 
 This repository also includes the [Dingo API Wiki](https://github.com/api-ecosystem-for-laravel/dingo-api/wiki) as a git submodule in the `dingo-api-wiki/` directory. The Dingo API is a Laravel package for building RESTful APIs.
