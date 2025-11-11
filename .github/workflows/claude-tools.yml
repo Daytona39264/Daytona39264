@@ -1,0 +1,52 @@
+name: Run Claude tools (get_weather + web_search)
+
+on:
+  workflow_dispatch: {}            # manual trigger
+  schedule:
+    - cron: '0 12 * * *'           # optional: run daily at 12:00 UTC (change or remove)
+
+jobs:
+  run-claude-tools:
+    runs-on: ubuntu-latest
+    env:
+      # Pull secrets into env for the job (do NOT hardcode keys elsewhere)
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
+      SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt || pip install anthropic requests
+
+      - name: Run Claude tool script
+        id: run_script
+        run: |
+          mkdir -p results
+          # run the script; it should write results/results.json or results/output.json
+          python scripts/run_claude_tool.py > results/console.log 2>&1 || true
+          # make sure a result file exists (script should create results/output.json)
+          ls -la results || true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
+          SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
+
+      - name: Upload logs and output artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: claude-tool-results
+          path: results
+
+      - name: Print summary (Action log)
+        run: |
+          echo "Workflow finished. Download the 'claude-tool-results' artifact from the Actions run to inspect output."
