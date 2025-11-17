@@ -21,6 +21,24 @@ I'm Daytona39264 — a passionate developer who loves turning ideas into reliabl
 
 ---
 
+## Getting Started
+
+To clone this repository with all documentation and resources:
+
+```bash
+# Clone with submodules (recommended)
+git clone --recurse-submodules https://github.com/Daytona39264/Daytona39264.git
+
+# Or, if you've already cloned without submodules:
+git clone https://github.com/Daytona39264/Daytona39264.git
+cd Daytona39264
+git submodule update --init --recursive
+```
+
+This repository includes the [Dingo API Wiki](https://github.com/api-ecosystem-for-laravel/dingo-api/wiki) as a submodule. See the [Resources & Documentation](#7-resources--documentation) section below for more details.
+
+---
+
 ## 1) Profession / Current Role
 Software Engineer | Full-Stack Developer
 Currently: Building web applications, APIs, and cloud-native systems.
