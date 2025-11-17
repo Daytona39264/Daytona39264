@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# JetBrains Client Installation Script for Linux
-# This script downloads and installs JetBrains Client (Gateway thin client)
+# JetBrains Gateway Installation Script for Linux
+# This script downloads and installs JetBrains Gateway
 # for remote development with JetBrains IDEs
 
 set -e
@@ -16,7 +16,7 @@ NC='\033[0m' # No Color
 # Configuration
 INSTALL_DIR="${HOME}/.local/share/JetBrains"
 BIN_DIR="${HOME}/.local/bin"
-DOWNLOAD_URL="https://download.jetbrains.com/idea/code-with-me/backend/jetbrains-clients-downloader-linux-x86_64-latest.tar.gz"
+DOWNLOAD_URL="https://download.jetbrains.com/idea/gateway/JetBrainsGateway-2025.2.4.tar.gz"
 TEMP_DIR=$(mktemp -d)
 
 # Functions
@@ -81,22 +81,22 @@ check_disk_space() { # Added check_disk_space function
     log_info "Disk space check passed"
 }
 
-download_client() { # Added download_client function
-    log_info "Downloading JetBrains Client..."
+download_gateway() { # Added download_gateway function
+    log_info "Downloading JetBrains Gateway..."
 
     cd "$TEMP_DIR"
 
-    if wget -O jetbrains-client.tar.gz "$DOWNLOAD_URL"; then
+    if wget -O jetbrains-gateway.tar.gz "$DOWNLOAD_URL"; then
         log_info "Download completed successfully"
     else
-        log_error "Failed to download JetBrains Client"
+        log_error "Failed to download JetBrains Gateway"
         log_info "You can manually download from: https://www.jetbrains.com/remote-development/gateway/"
         exit 1
     fi
 }
 
-install_client() { # Added install_client function
-    log_info "Installing JetBrains Client..."
+install_gateway() { # Added install_gateway function
+    log_info "Installing JetBrains Gateway..."
 
     # Create installation directory
     mkdir -p "$INSTALL_DIR"
@@ -104,19 +104,19 @@ install_client() { # Added install_client function
 
     # Extract the archive
     log_info "Extracting archive..."
-    tar -xzf "$TEMP_DIR/jetbrains-client.tar.gz" -C "$INSTALL_DIR"
+    tar -xzf "$TEMP_DIR/jetbrains-gateway.tar.gz" -C "$INSTALL_DIR"
 
     # Find the extracted directory (it might have a version number)
-    CLIENT_DIR=$(find "$INSTALL_DIR" -maxdepth 1 -type d -name "jetbrains-clients*" | head -n 1)
+    CLIENT_DIR=$(find "$INSTALL_DIR" -maxdepth 1 -type d -name "JetBrainsGateway*" | head -n 1)
 
     if [ -z "$CLIENT_DIR" ]; then
-        log_error "Could not find extracted client directory"
+        log_error "Could not find extracted Gateway directory"
         exit 1
     fi
 
     # Create symlink in bin directory
     log_info "Creating symbolic link..."
-    ln -sf "$CLIENT_DIR/jetbrains-clients-downloader" "$BIN_DIR/jetbrains-client"
+    ln -sf "$CLIENT_DIR/bin/gateway.sh" "$BIN_DIR/jetbrains-gateway"
 
     log_info "Installation completed to: $CLIENT_DIR"
 }
@@ -145,15 +145,15 @@ update_path() { # Added update_path function
 verify_installation() { # Added verify_installation function
     log_info "Verifying installation..."
 
-    if [ -f "$BIN_DIR/jetbrains-client" ]; then
-        log_info "JetBrains Client installed successfully!"
-        log_info "Location: $BIN_DIR/jetbrains-client"
+    if [ -f "$BIN_DIR/jetbrains-gateway" ]; then
+        log_info "JetBrains Gateway installed successfully!"
+        log_info "Location: $BIN_DIR/jetbrains-gateway"
 
         # Try to run it to check version
-        if "$BIN_DIR/jetbrains-client" --help &>/dev/null; then
-            log_info "Client is executable and ready to use"
+        if "$BIN_DIR/jetbrains-gateway" --help &>/dev/null; then
+            log_info "Gateway is executable and ready to use"
         else
-            log_warn "Client binary found but may need additional configuration"
+            log_warn "Gateway binary found but may need additional configuration"
         fi
     else
         log_error "Installation verification failed"
@@ -164,16 +164,16 @@ verify_installation() { # Added verify_installation function
 print_usage_info() { # Added print_usage_info function
     cat << EOF
 
-${GREEN}=== JetBrains Client Installation Complete ===${NC}
+${GREEN}=== JetBrains Gateway Installation Complete ===${NC}
 
-To use JetBrains Client:
-  1. Run: jetbrains-client
-  2. Or use the full path: $BIN_DIR/jetbrains-client
+To use JetBrains Gateway:
+  1. Run: jetbrains-gateway
+  2. Or use the full path: $BIN_DIR/jetbrains-gateway
 
 For remote development:
-  - Connect to your remote workspace
-  - JetBrains Gateway will download the necessary IDE backend
+  - Launch Gateway and connect to your remote workspace
   - Choose your preferred IDE (IntelliJ IDEA, PyCharm, WebStorm, etc.)
+  - Gateway will download the necessary IDE backend
 
 Documentation:
   - JetBrains Gateway: https://www.jetbrains.com/remote-development/gateway/
@@ -184,12 +184,12 @@ EOF
 
 # Main installation flow
 main() {
-    log_info "Starting JetBrains Client installation..."
+    log_info "Starting JetBrains Gateway installation..."
 
     check_dependencies
     check_disk_space
-    download_client
-    install_client
+    download_gateway
+    install_gateway
     update_path
     verify_installation
     print_usage_info
