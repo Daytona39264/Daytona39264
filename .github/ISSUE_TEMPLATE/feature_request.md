@@ -6,24 +6,34 @@ labels: enhancement
 assignees: ''
 ---
 
+<!-- 
+🚨 IMPORTANT: Please fill out ALL required sections below. Empty or placeholder issues will be closed.
+📖 Before submitting, review our Issue Guidelines: https://github.com/Daytona39264/Daytona39264/blob/main/.github/ISSUES.md
+-->
+
 ## 💡 Feature Description
 
-<!-- A clear and concise description of the feature you'd like to see -->
+<!-- REQUIRED: A clear and concise description of the feature you'd like to see.
+     Delete this comment and describe your feature in detail. -->
 
 ## 🎯 Problem Statement
 
-<!-- What problem does this feature solve? What need does it address? -->
+<!-- REQUIRED: What problem does this feature solve? What need does it address?
+     Delete this comment and describe the problem. -->
 
 **Is your feature request related to a problem?**
-<!-- e.g. "I'm always frustrated when..." or "It would be helpful if..." -->
+<!-- REQUIRED: Explain the problem. e.g. "I'm always frustrated when..." or "It would be helpful if..."
+     Delete this comment and answer the question. -->
 
 ## 🔧 Proposed Solution
 
-<!-- Describe your proposed solution in detail -->
+<!-- REQUIRED: Describe your proposed solution in detail.
+     Delete this comment and provide your solution. -->
 
 ### How It Would Work
 
-<!-- Explain how the feature would function -->
+<!-- REQUIRED: Explain how the feature would function.
+     Delete this comment and explain the functionality. -->
 
 ### Example Implementation
 
@@ -35,7 +45,8 @@ assignees: ''
 
 ## 🎨 Alternatives Considered
 
-<!-- What alternative solutions or features have you considered? -->
+<!-- REQUIRED: What alternative solutions or features have you considered?
+     Delete this comment and describe alternatives, or write "None" if you haven't considered any. -->
 
 ## 📊 Benefits
 
