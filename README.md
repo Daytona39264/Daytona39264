@@ -159,36 +159,6 @@ The wiki contains comprehensive documentation on:
 
 ---
 
-## Contributing
-
-I welcome contributions, feedback, and collaboration! Here's how you can get involved:
-
-### 🐛 Report Issues
-Found a bug or have a suggestion? Use our structured issue templates:
-
-- **[Bug Report](https://github.com/Daytona39264/Daytona39264/issues/new?template=bug_report.yml)** - Report bugs with detailed steps and environment info
-- **[Feature Request](https://github.com/Daytona39264/Daytona39264/issues/new?template=feature_request.yml)** - Suggest new features or improvements
-- **[Question](https://github.com/Daytona39264/Daytona39264/issues/new?template=question.yml)** - Ask questions about the repository or documentation
-
-All issue templates include required fields to ensure we have the information needed to help effectively.
-
-### 📖 Documentation
-Help improve our guides by:
-- Reporting unclear sections
-- Suggesting additions or corrections
-- Contributing examples or tutorials
-
-### 🤝 Code Contributions
-While this is primarily a documentation/profile repository, code contributions to the installation scripts and tools are welcome.
-
-### 📋 Guidelines
-- Check existing issues before creating new ones
-- Use clear, descriptive titles
-- Provide as much context as possible
-- Be respectful and constructive
-
----
-
 ## How to use this README
 1. If you haven't already, create a repository named exactly: Daytona39264 (your GitHub username).
 2. Add this file as README.md in the repository root.
