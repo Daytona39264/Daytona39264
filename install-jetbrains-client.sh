@@ -10,6 +10,7 @@ set -e
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
 # Configuration
@@ -31,6 +32,10 @@ log_error() {
     echo -e "${RED}[ERROR]${NC} $1"
 }
 
+log_step() {
+    echo -e "${BLUE}[STEP]${NC} $1"
+}
+
 cleanup() {
     log_info "Cleaning up temporary files..."
     rm -rf "$TEMP_DIR"
@@ -38,7 +43,7 @@ cleanup() {
 
 trap cleanup EXIT
 
-check_dependencies() {
+check_dependencies() { # Added check_dependencies function
     log_info "Checking dependencies..."
 
     local missing_deps=()
@@ -61,7 +66,7 @@ check_dependencies() {
     log_info "All dependencies satisfied"
 }
 
-check_disk_space() {
+check_disk_space() { # Added check_disk_space function
     log_info "Checking available disk space..."
 
     # shellcheck disable=SC2155
@@ -76,7 +81,7 @@ check_disk_space() {
     log_info "Disk space check passed"
 }
 
-download_client() {
+download_client() { # Added download_client function
     log_info "Downloading JetBrains Client..."
 
     cd "$TEMP_DIR"
@@ -90,7 +95,7 @@ download_client() {
     fi
 }
 
-install_client() {
+install_client() { # Added install_client function
     log_info "Installing JetBrains Client..."
 
     # Create installation directory
@@ -116,7 +121,7 @@ install_client() {
     log_info "Installation completed to: $CLIENT_DIR"
 }
 
-update_path() {
+update_path() { # Added update_path function
     log_info "Checking PATH configuration..."
 
     if [[ ":$PATH:" != *":$BIN_DIR:"* ]]; then
@@ -137,7 +142,7 @@ update_path() {
     fi
 }
 
-verify_installation() {
+verify_installation() { # Added verify_installation function
     log_info "Verifying installation..."
 
     if [ -f "$BIN_DIR/jetbrains-client" ]; then
@@ -156,7 +161,7 @@ verify_installation() {
     fi
 }
 
-print_usage_info() {
+print_usage_info() { # Added print_usage_info function
     cat << EOF
 
 ${GREEN}=== JetBrains Client Installation Complete ===${NC}
