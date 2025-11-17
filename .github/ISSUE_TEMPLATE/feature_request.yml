@@ -1,0 +1,95 @@
+name: Feature Request
+description: Suggest a new feature or improvement
+title: "[FEATURE] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Feature Description
+      description: A clear and concise description of the feature you'd like to see.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: What problem does this feature solve? What need does it address?
+      placeholder: e.g. "I'm always frustrated when..." or "It would be helpful if..."
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe your proposed solution in detail.
+      placeholder: Explain how the feature would function, with examples if possible.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: What alternative solutions or features have you considered?
+  - type: textarea
+    id: benefits
+    attributes:
+      label: Benefits
+      description: What are the benefits of this feature?
+      placeholder: |
+        - **For users**:
+        - **For maintainers**:
+        - **For the project**:
+  - type: checkboxes
+    id: affected
+    attributes:
+      label: Affected Files/Sections
+      description: Which files or sections would need to be modified?
+      options:
+        - label: README.md
+        - label: .github/workflows/
+        - label: .github/CONTRIBUTING.md
+        - label: .github/ISSUES.md
+        - label: Issue templates
+        - label: Other (please specify in additional context)
+  - type: textarea
+    id: mockups
+    attributes:
+      label: Mockups/Examples
+      description: If applicable, add mockups, screenshots, or examples from other projects.
+      placeholder: Drag and drop images or paste links.
+  - type: textarea
+    id: related
+    attributes:
+      label: Related Issues/PRs
+      description: Link to any related issues or pull requests.
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Add any other context, screenshots, or information about the feature request.
+  - type: dropdown
+    id: complexity
+    attributes:
+      label: Implementation Complexity
+      description: Your estimate of implementation difficulty
+      options:
+        - Simple (minor text/link changes)
+        - Moderate (new section or restructuring)
+        - Complex (significant changes or new functionality)
+        - Unsure
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      description: Please confirm the following
+      options:
+        - label: I have searched existing issues to ensure this hasn't been requested before
+          required: true
+        - label: I have clearly described the problem this feature solves
+          required: true
+        - label: I have provided a detailed proposed solution
+          required: true
+        - label: I have considered alternative approaches
+        - label: I have read the [Issue Guidelines](../ISSUES.md)
+          required: true

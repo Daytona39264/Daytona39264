@@ -1,0 +1,110 @@
+name: Question
+description: Ask a question about the repository
+title: "[QUESTION] "
+labels: ["question"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: Ask your question clearly and concisely.
+    validations:
+      required: true
+  - type: textarea
+    id: accomplish
+    attributes:
+      label: What Are You Trying to Accomplish?
+      description: Describe what you're trying to do or understand.
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: What Have You Tried?
+      description: Describe what you've already attempted or researched.
+    validations:
+      required: true
+  - type: checkboxes
+    id: tried_options
+    attributes:
+      label: What Have You Tried (Check all that apply)
+      options:
+        - label: Searched existing issues
+        - label: Read the README.md
+        - label: Reviewed the CONTRIBUTING.md
+        - label: Checked the copilot-instructions.md
+        - label: Looked at similar repositories
+        - label: Other (please specify in additional information)
+  - type: textarea
+    id: context
+    attributes:
+      label: Relevant Context
+      description: Provide any relevant context that might help answer your question.
+  - type: checkboxes
+    id: section
+    attributes:
+      label: Specific Section/File
+      description: Which part of the repository is your question about?
+      options:
+        - label: README.md profile content
+        - label: Badges and visual elements
+        - label: Skills and technologies section
+        - label: Projects section
+        - label: Contributing guidelines
+        - label: Issue templates
+        - label: GitHub Actions workflows
+        - label: General repository structure
+        - label: Other (please specify in additional information)
+  - type: dropdown
+    id: background
+    attributes:
+      label: Your Background
+      description: Your experience level (helps us tailor the answer)
+      options:
+        - New to GitHub/markdown
+        - Familiar with GitHub, new to profile READMEs
+        - Experienced with markdown and GitHub
+        - Just need clarification on specific details
+  - type: checkboxes
+    id: answer_type
+    attributes:
+      label: Expected Answer Type
+      description: What kind of answer would be most helpful?
+      options:
+        - label: Step-by-step instructions
+        - label: Code/markdown example
+        - label: Link to documentation
+        - label: Explanation of concept
+        - label: Other (please specify in additional information)
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or Examples
+      description: If applicable, add screenshots or examples to help explain your question.
+      placeholder: Drag and drop images or paste links.
+  - type: textarea
+    id: links
+    attributes:
+      label: Related Links
+      description: Any relevant links or references.
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Any other information that might help answer your question.
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      description: Please confirm the following
+      options:
+        - label: I have searched existing issues for similar questions
+          required: true
+        - label: I have read the available documentation (README, CONTRIBUTING, etc.)
+          required: true
+        - label: I have clearly described what I'm trying to accomplish
+          required: true
+        - label: I have explained what I've already tried
+          required: true
+        - label: I have read the [Issue Guidelines](../ISSUES.md)
+          required: true

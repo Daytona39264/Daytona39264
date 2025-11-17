@@ -1,0 +1,108 @@
+name: Bug Report
+description: Report a bug or issue with the repository
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
+      placeholder: Describe the bug here...
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: A clear and concise description of what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: A clear and concise description of what actually happened.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain your problem.
+      placeholder: Drag and drop images here or paste links.
+  - type: input
+    id: os
+    attributes:
+      label: OS
+      description: e.g. Windows 10, macOS 13, Ubuntu 22.04
+      placeholder: Your operating system
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser
+      description: e.g. Chrome 119, Firefox 120, Safari 17
+      placeholder: Your browser
+  - type: input
+    id: device
+    attributes:
+      label: Device
+      description: e.g. Desktop, Mobile, Tablet
+      placeholder: Your device type
+  - type: input
+    id: resolution
+    attributes:
+      label: Screen Resolution
+      description: e.g. 1920x1080
+      placeholder: Your screen resolution
+  - type: checkboxes
+    id: affected
+    attributes:
+      label: Affected Files/Sections
+      description: Which files or sections of the repository are affected?
+      options:
+        - label: README.md
+        - label: .github/workflows/
+        - label: .github/CONTRIBUTING.md
+        - label: .github/ISSUES.md
+        - label: Issue templates
+        - label: Other (please specify in additional context)
+  - type: textarea
+    id: links
+    attributes:
+      label: Related Links
+      description: Any related links or references.
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Add any other context about the problem here.
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      description: Please confirm the following
+      options:
+        - label: I have searched existing issues to ensure this is not a duplicate
+          required: true
+        - label: I have provided clear steps to reproduce the issue
+          required: true
+        - label: I have included relevant screenshots or error messages
+        - label: I have specified my environment details
+          required: true
+        - label: I have read the [Issue Guidelines](../ISSUES.md)
+          required: true
